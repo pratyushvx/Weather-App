@@ -29,7 +29,7 @@ async function check(city){
    document.querySelector('.temp').innerText=Math.round(data.main.temp)+`°C`;
    document.querySelector('.humidity').innerText=data.main.humidity+`%`;
    document.querySelector('.wind').innerText=data.wind.speed+`km/h`;
-   document.querySelector('.weather').style.display='flex';
+   document.querySelector('.weather').style.display='block';
    if((data.weather[0].main)=="Clear"){
     document.querySelector('.weather-icon').src="imagesWeather/clear.png"
    }
